@@ -1,9 +1,8 @@
-<!DOCTYPE rss [<!ENTITY xxe SYSTEM "file:///etc/passwd">]>
 <rss version="2.0">
     <channel>
-        <title>Test &xxe;</title>
+        <title>Test </title>
         <link>https://example.com/</link>
-        <description>&xxe;</description>
+        <description>description</description>
         <language>fr</language>
     </channel>
 </rss>
